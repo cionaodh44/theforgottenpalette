@@ -200,8 +200,16 @@
         .gallery-video-wrapper {
             flex: 1; aspect-ratio: 16/9; border: 1px solid var(--primary-red);
             background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .gallery-video-wrapper iframe { width: 100%; height: 100%; border: none; }
+        .coming-soon-text {
+            color: var(--text-gray);
+            font-size: 24px;
+            font-style: italic;
+        }
 
         /* --- CHARACTER SECTION --- */
         .character-section { padding-bottom: var(--section-gap); text-align: center; }
@@ -249,8 +257,8 @@
         <div class="header-left">
             <img src="logo.png" alt="Logo" class="logo">
             <div class="cta-buttons">
-                <a href="#" class="btn-primary">Play Demo</a>
-                <button class="btn-secondary">Survey</button>
+                <a href="https://drive.google.com/file/d/1xFFo-bckFT3ouDDHedqTAvc3eZ_Baf-t/view?usp=sharing" target="_blank" class="btn-primary">Play Demo</a>
+                <a href="https://forms.gle/Vp3ekb74zppXyfM57" target="_blank" class="btn-secondary">Survey</a>
             </div>
         </div>
         <div class="header-right">
@@ -273,7 +281,7 @@
     <section class="video-parallax-section fade-in">
         <div class="video-3d-container" id="video3D">
             <iframe 
-                src="https://www.youtube.com/embed/S2p0Pio5Xk4?autoplay=1&mute=1&loop=1&playlist=S2p0Pio5Xk4&controls=0&modestbranding=1&rel=0" 
+                src="https://www.youtube.com/embed/gyip46oxfnc?autoplay=1&mute=1&loop=1&playlist=gyip46oxfnc&controls=0&modestbranding=1&rel=0" 
                 allow="autoplay; encrypted-media">
             </iframe>
         </div>
@@ -304,7 +312,7 @@
     <!-- Parallax Promo -->
     <section class="parallax-section" style="height:100vh; position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;">
         <img src="promo.png" alt="Promo" id="parallaxImg" style="position:absolute; width:100%; height:130%; object-fit:cover; z-index:1; filter: brightness(0.6);">
-        <a href="#" class="btn-primary" style="font-size: 28px; padding: 25px 80px; z-index:5;">Play Demo Now</a>
+        <a href="https://drive.google.com/file/d/1xFFo-bckFT3ouDDHedqTAvc3eZ_Baf-t/view?usp=sharing" target="_blank" class="btn-primary" style="font-size: 28px; padding: 25px 80px; z-index:5;">Play Demo Now</a>
     </section>
 
     <!-- STORY -->
@@ -323,10 +331,10 @@
         <h2 class="section-title">Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-video-wrapper">
-                <iframe src="https://www.youtube.com/embed/S2p0Pio5Xk4" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/aAl_fRDtGDY" allowfullscreen></iframe>
             </div>
             <div class="gallery-video-wrapper">
-                <iframe src="https://www.youtube.com/embed/S2p0Pio5Xk4" allowfullscreen></iframe>
+                <div class="coming-soon-text">Coming soon</div>
             </div>
         </div>
     </section>
